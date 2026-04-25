@@ -1,0 +1,9 @@
+name = "hermes-web-9v3"
+compatibility_date = "2024-01-01"
+pages_build_output_dir = "../hermes_cli/web_dist"
+
+[build]
+command = "npm run build"
+
+[env.production.vars]
+NODE_ENV = "production"

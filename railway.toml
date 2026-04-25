@@ -1,0 +1,11 @@
+[project]
+name = "hermes-backend"
+
+[deploy]
+startCommand = "python -m hermes_cli.main gateway run"
+healthcheckPath = "/health"
+restartPolicyType = "ON_FAILURE"
+
+[build]
+builder = "DOCKERFILE"
+dockerfilePath = "Dockerfile"
